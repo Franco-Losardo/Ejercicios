@@ -1,5 +1,14 @@
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+import random
+# #Prints a list (c) with elements shared between a and b
+a = random.sample(range(20), 5)
+b = random.sample(range(20), 5)
 c = [num for num in a for numy in b if num == numy]
+c = list(set(c))
+print(c)
+#Alternative way
+
+a = random.sample(range(20), 5)
+b = random.sample(range(20), 5)
+c = [num for num in a if num in b]
 c = list(set(c))
 print(c)
