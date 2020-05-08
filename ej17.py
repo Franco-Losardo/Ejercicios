@@ -4,6 +4,6 @@ from bs4 import BeautifulSoup
 r = requests.get('https://lanacion.com.ar')
 r_html = r.text
 soup = BeautifulSoup(r_html, features="html.parser")
-h1_titles = soup("h1")
-h2_titles = soup("h2")
-print(h1_titles, h2_titles)
+# Here you enter the HTML tag that containes all those titles you want to print
+h1_titles = soup(class_="com-title")
+print(h1_titles)
