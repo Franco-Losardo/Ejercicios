@@ -25,7 +25,7 @@ def duplicates():
 
 print(duplicates())
 
-# Method 2: using sets
+# Method 3: using sets
 a = [1, 1, 5, 0, 6, 3, 5, 0]
 
 
