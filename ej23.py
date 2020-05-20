@@ -6,8 +6,9 @@ with open('happyNumbers.txt', 'r') as f, open('primeNumbers.txt', 'r') as f2:
     formatted_primes = prime_numbers.split()
 
     overlapping = []
-    for number in formatted_happys:
-        if number in formatted_primes:
-            overlapping.append(int(number))
+    with open ("numbers overlapping.txt", "w") as file:
+        for number in formatted_happys:
+            if number in formatted_primes:
+                overlapping.append(int(number))
 
 print(overlapping)
